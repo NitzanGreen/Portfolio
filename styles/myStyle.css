@@ -1,0 +1,367 @@
+﻿
+/*תפריט ניווט*/
+#nav1 ul {
+    list-style: none;
+    width: 1150px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-right: 10px;
+    margin: 20px;
+}
+
+    #nav1 ul li {
+        display: inline-block;
+        float: right;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+     #nav1 ul li a {
+            display: block;
+            background-color: whitesmoke;
+            color: purple;
+            text-decoration: none;
+            text-align: center;
+            width: 200px;
+            height: 35px;
+            padding-top: 15px;
+            font-size: 18px;
+            border-radius: 13px;
+        }
+
+            #nav1 ul li a:hover {
+                background-color: hotpink;
+                color: purple;
+            }
+
+nav ul li a#selected {
+    background-color: purple;
+    color: white;
+    border-width: 5px;
+    font-weight: 700;
+}
+
+
+/*עמוד הבית + basics*/
+
+body {
+    direction: rtl;
+    background-image: url(..//images/aurora.jpg);
+    background-repeat:round;
+    background-size: cover;
+}
+
+#container {
+    Width: 960px;
+    Margin: 0 auto;
+    Height: 700px;
+    padding-top: 20px;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 45px;
+    font-family: 'Lucida Sans Unicode';
+    color: white;
+}
+
+.intro {
+    display:inline;
+    font-size: 16pt;
+    margin-right: 70px;
+    padding-top: 50px;
+    height: 610px;
+    width: 880px;
+}
+ .intro p {
+    margin-top: 30px;
+    width: 450px;
+    }
+
+ #profile img{
+    display:inline;
+    border-radius: 100%;
+    height: 340px;
+    width: 250px;
+    float:left;
+    margin-left:120px;  
+}
+
+
+h2 {
+    font-family: 'Lucida Sans Unicode';
+    font-size: 24px;
+    font-weight:700;
+}
+
+
+.findme{
+    height: 50px;
+    margin-top: 70px;
+    width:880px;
+}
+
+    .findme h2, .basic h2, .video h2{
+        padding-bottom: 10px;
+    }
+
+.mail {
+    width: 100px;
+    height: 50px;
+    background-image: url(..//images/Gmail.png);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    position: absolute;
+    padding-left: 20px;
+}
+
+
+.FB {
+    height: 45px;
+    width: 45px;
+    background-image: url(../images/facebook.png);
+    background-repeat: no-repeat;
+    background-size: 45px 45px;
+    position: absolute;
+    border-radius: 8px;
+}
+
+    .FB:hover , .mail:hover {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+ 
+  /*אנימציות*/
+  @-webkit-keyframes tada {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  10%, 20% {
+  -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%, 50%, 70%, 90% {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%, 60%, 80% {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  }
+  @keyframes tada {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  10%, 20% {
+  -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%, 50%, 70%, 90% {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%, 60%, 80% {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  } 
+
+audio {
+    margin-left: 60px;
+    float:left;
+    padding-top: 25px;
+    padding-bottom:20px;
+}
+
+.song {
+    float: left;
+    margin-left: 26px;
+    background-image: url('../images/song.PNG');
+    background-repeat: no-repeat;
+    background-size: 60px;
+    padding-bottom: 25px;
+    display:inline-block;
+}
+
+    .song p {
+        margin-left: 75px;
+        padding-top: 10px;
+    }
+
+footer {
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom:20px;
+}
+
+    footer p {
+        margin-top: 3px;
+    }
+
+
+/*דף 2 - עיצוב לוגו מחדש*/
+
+#new_logo h2{
+    margin-top:20px;
+}
+
+#orig  {
+    margin-top: 10px;
+    width: 200px;
+    }
+
+#orig_logo img{
+    height:260px;
+    width:330px;
+    display:inline;
+    float:left;
+    padding-right:60px;
+}
+
+#orig_logo img:hover, #new_logo img:hover, #self_portrait img:hover {
+    opacity:0.8;
+}
+
+#new_logo img{
+    height:300px;
+    width:410px;
+    display:inline;
+    float:left;
+    margin-left:-30px;
+    padding-right:30px;
+
+}
+/*דף 3 - דיוקן עצמי*/
+
+.portrait {
+    display:inline;
+    font-size: 16pt;
+    margin-right: 70px;
+    padding-top: 50px;
+    height: 910px;
+    width: 880px;
+}
+  .portrait p {
+        margin-top: 30px;
+        width: 455px;
+    }
+#self_portrait img{
+    display:inline;
+    height: 370px;
+    width: 255px;
+    float:left;
+    margin-left:120px;
+    border-radius:30px;
+}
+#personas h2{
+    margin-top:65px;
+}
+
+#explain{
+    margin-top:25px;
+    text-align:center;
+    padding-left:120px;
+    color:black;
+    font-weight:bold;
+    font-size:19px;
+}
+#explain p{
+    margin-right:50px;
+    margin-top:30px;
+    display:inline;
+    margin-left:60px;
+    
+  
+}
+
+#three img{
+    float:right;
+}
+
+#three{
+    height:280px;
+    width:960px; 
+    margin-right:50px;
+}
+
+.tall{
+    display:inline-block;
+    height: 270px;
+    width: 185px;
+    margin:30px 30px;
+}
+
+#profess{
+    display:inline-block;
+    height: 140px;
+    width: 220px;
+    padding-top:90px;
+}
+
+/*עמוד 4 - תקשורת חזותית גמר*/
+.basic , .video, #compare{
+    display: inline;
+    font-size: 15pt;
+    margin-right: 70px;
+    padding-top: 50px;
+    height: 70px;
+    width: 860px;
+}
+
+.video h2{
+margin-top:30px;
+}
+
+.basic p, .video p{
+        margin-top: 20px;
+        width:800px;
+}
+
+/*סרטון*/
+ iframe{
+    position:center;
+    padding-top:30px;
+}
+
+#compare img {
+    display: inline;
+}
+
+
+/*השוואה - תמונות*/
+#compare h2{
+    color:black;
+}
+
+#original img{
+    height: 280px;
+    width: 410px;
+    float:right;
+}
+
+#ours img{
+    height:280px;
+    width:190px;
+    float:left;
+}
